@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/palabra.css">
     <script src="js/script.js"></script>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,9 +21,12 @@
 <body>
     <img src="img/logo.png" alt="Logo AluraLatam">
 
-    <main class="botones">
-        <button type="button" class="btnjugar" onclick="jugar()">Comenzar juego</button>
-        <button type="button" class="btnpalabra" onclick="agregarPalabra()">Agregar palabra</button>
+    <main class="agregar">
+        <section>
+            <input type="text" name="palabra" id="palabra" placeholder="Ingresa una palabra">
+            <button type="button" class="btnagregar" onclick="agregarPalabra()">Agregar palabra</button>
+            <button type="button" class="btncancelar" onclick="cancelar()">Cancelar</button></button>
+        </section>
     </main>
 </body>
 

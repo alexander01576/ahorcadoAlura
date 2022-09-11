@@ -1,0 +1,57 @@
+body {
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    padding: 50px;
+}
+
+.botones {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btnjugar {
+    background-color: rgb(0, 30, 255);
+    border: 1px solid rgb(0, 30, 255);
+    color: #fff;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 80px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+
+.btnjugar:hover {
+    background-color: rgb(0, 26, 171);
+}
+
+
+.btnpalabra{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 27, 231);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 80px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+
+.btnpalabra:hover {
+    background-color: rgb(206, 212, 255);
+    color: rgb(107, 107, 107);
+}
+
+/* * {
+    border: 1px solid red;
+} */
