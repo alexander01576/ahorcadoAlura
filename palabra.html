@@ -22,9 +22,12 @@
     <img src="img/logo.png" alt="Logo AluraLatam">
 
     <main class="agregar">
-        <section>
-            <input type="text" name="palabra" id="palabra" placeholder="Ingresa una palabra">
-            <button type="button" class="btnagregar" onclick="agregarPalabra()">Agregar palabra</button>
+        <section class="areatexto">
+            <textarea class="palabratxt" name="palabratxt" id="palabratxt" placeholder="Ingresa una palabra"></textarea>    
+        </section>
+        <section class="areabtn">
+            <p>Maximo de 8 letras</p>
+            <button type="button" class="btnagregar" onclick="addpalabra()">Agregar palabra</button>
             <button type="button" class="btncancelar" onclick="cancelar()">Cancelar</button></button>
         </section>
     </main>
