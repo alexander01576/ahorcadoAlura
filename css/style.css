@@ -3,6 +3,7 @@ body {
     color: #000;
     font-size: 14px;
     padding: 50px;
+    
 }
 
 .botones {
@@ -52,6 +53,45 @@ body {
     color: rgb(107, 107, 107);
 }
 
-/* * {
+.btnlimpiar {
+    background-color: rgb(187, 255, 0);
+    border: 1px solid rgb(47, 255, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    transition: 1s;
+}
+
+.btnlimpiar:hover {
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+h1,* {
+    color: #000;
+}
+
+.listWords {
+    font-size: 1.5em;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.listaPalabrascont {
+    margin-top: 50px;
+    border: 3px solid rgb(100, 205, 203);
+    border-radius: 20px;
+    background-color: rgb(207, 255, 255);
+}
+
+/* 
+* {
     border: 1px solid red;
 } */
