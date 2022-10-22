@@ -10,7 +10,6 @@ const espacioLetras = document.getElementById("letrasPalabra");
 
 //llamado de las funciones
 cargaJuego();
-enfocar();
 
 
 //funcion para cargar los elementos para el juego
@@ -43,8 +42,41 @@ function mostrarEspacios() {
         espacioLetra.setAttribute("type", "text");
         espacioLetra.setAttribute("class", "espacioLetra");
         espacioLetra.setAttribute("maxlength", "1");
+        //agregar el elemento de onkeyup para validar la letra ingresada
+        espacioLetra.setAttribute("onkeyup", "validarLetra('" + palabraSeleccionada + "',this.id ,this.value)");
+        // //valor inicial del input
+        // espacioLetra.setAttribute("value", "");
+        //asignar el id de letra
+        espacioLetra.setAttribute("id", "val"+i);
         espacioLetras.appendChild(espacioLetra);
+
     }
     console.log(palabraSeleccionada);
 }
 
+
+
+//funcion para validar si la letra ingresada es correcta
+function validarLetra(palabraSeleccionada, idletra, valorEntrada) {
+    // console.log(palabraSeleccionada);
+    // console.log(idletra);
+    console.log("Valor a evaluar: " + valorEntrada);
+    //validar si la letra ingresada se encuetra en la palabra seleccionada
+    if (palabraSeleccionada.includes(valorEntrada)) {
+        console.log("si");
+        //validada la letra ponerla en los espacios correspondientes
+        for (let i = 0; i < palabraSeleccionada.length; i++) {
+            //leer la letra de la palabra seleccionada y compararla con la letra ingresada para rellenar los demas inputs con las mismas letras
+            if (palabraSeleccionada[i] == valorEntrada) {
+                //obtener el id del input
+                let idInput = document.getElementById("val"+(i+1));
+                //asignar el valor de la letra ingresada
+                idInput.setAttribute("value", valorEntrada);
+            }
+        }
+    } else {
+        console.log("no");
+    }
+
+
+}
